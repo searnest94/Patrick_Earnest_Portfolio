@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patrick Earnest — Portfolio</title>
+  <style>
+    :root{--bg:#0b0c10;--panel:#111217;--text:#e8ebf1;--muted:#a8b0bf;--accent:#6fb1ff;--border:#242734;}
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f6f7fb;--panel:#ffffff;--text:#0f172a;--muted:#475569;--accent:#0ea5e9;--border:#e5e7eb;}
+    }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin:0 auto;padding:24px}
+    .top{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:14px}
+    .btn{border:1px solid var(--border);padding:6px 10px;border-radius:10px}
+    h1{margin:0}
+    .grid{display:grid;gap:16px;grid-template-columns:1fr}
+    @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:18px}
+    .card h2{margin:0 0 6px 0;font-size:20px}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btnrow a{border:1px solid var(--border);padding:6px 10px;border-radius:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <h1>Portfolio</h1>
+      <a class="btn" href="../">← Back to Resume</a>
+    </div>
+
+    <div class="grid">
+
+      <!-- Wingate Massage -->
+      <div class="card">
+        <h2>Wingate Massage — IT Lead</h2>
+        <div class="meta">Jan 2025 – Present • Square, DNS/SSL, M365/Entra ID (MFA, RBAC)</div>
+        <p>Built and secured the small-business website and IT stack: Square site, DNS & SSL, Microsoft 365 with MFA and role-based access, backups, and basic SEO/accessibility.</p>
+        <ul>
+          <li>Security: enforced MFA, least privilege, backup/restore tests</li>
+          <li>Impact: add 2–3 measurable outcomes (page speed, no-shows, uptime)</li>
+        </ul>
+        <div class="btnrow">
+          <a href="https://github.com/searnest94/Patrick_Earnest_Portfolio/tree/main/projects/wingate-massage-website" target="_blank">Repo folder</a>
+          <!-- Replace # with the live site if you want to link it -->
+          <a href="#" target="_blank">Live site (optional)</a>
+        </div>
+      </div>
+
+      <!-- Packet Tracer Lab -->
+      <div class="card">
+        <h2>Inter-Subnet Routing with RIP + DHCP/DNS</h2>
+        <div class="meta">Academic Project — CYB-210</div>
+        <p>Provided routed connectivity between subnets with centralized DHCP/DNS; validated with <code>show ip route</code>, traceroute, and nslookup.</p>
+        <ul>
+          <li>Results: all subnets reachable; RIP learned N routes; X clients received leases</li>
+        </ul>
+        <div class="btnrow">
+          <a href="https://github.com/searnest94/Patrick_Earnest_Portfolio/tree/main/projects/cyb210-packettracer-rip-dhcp-dns" target="_blank">Repo folder</a>
+        </div>
+      </div>
+
+      <!-- AD Hardening -->
+      <div class="card">
+        <h2>Active Directory Hardening Lab</h2>
+        <div class="meta">GPOs, auditing, least privilege, MFA</div>
+        <p>Hardened an AD lab with secure policies and auditing; documented evidence and improvements.</p>
+        <div class="btnrow">
+          <a href="https://github.com/searnest94/Patrick_Earnest_Portfolio/tree/main/projects/ad-hardening-lab" target="_blank">Repo folder</a>
+        </div>
+      </div>
+
+      <!-- Vulnerability Cycle -->
+      <div class="card">
+        <h2>Vulnerability Scan & Patch Cycle</h2>
+        <div class="meta">Baseline → prioritize → remediate → retest</div>
+        <p>Ran a scan on sample hosts, prioritized findings, documented remediation, and verified fixes with a retest report.</p>
+        <div class="btnrow">
+          <a href="https://github.com/searnest94/Patrick_Earnest_Portfolio/tree/main/projects/vuln-cycle" target="_blank">Repo folder</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
