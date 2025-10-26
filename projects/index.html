@@ -1,1 +1,79 @@
-<!doctype html><html><body><h1>Portfolio works!</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Patrick Earnest — Portfolio</title>
+  <style>
+    :root{--bg:#0b0c10;--panel:#111217;--text:#e8ebf1;--muted:#a8b0bf;--accent:#6fb1ff;--border:#242734}
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f6f7fb;--panel:#fff;--text:#0f172a;--muted:#475569;--accent:#0ea5e9;--border:#e5e7eb}
+    }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin:0 auto;padding:24px}
+    .top{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:16px}
+    .btn{border:1px solid var(--border);padding:6px 10px;border-radius:10px}
+    .grid{display:grid;gap:16px;grid-template-columns:1fr}
+    @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:18px}
+    .card h2{margin:0 0 6px 0;font-size:20px}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+    .thumb{width:100%;height:180px;object-fit:cover;border:1px solid var(--border);border-radius:12px;background:#000;margin-bottom:10px}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btnrow a{border:1px solid var(--border);padding:6px 10px;border-radius:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <h1>Portfolio</h1>
+      <a class="btn" href="../">← Back to Resume</a>
+    </div>
+
+    <div class="grid">
+      <!-- Wingate Massage -->
+      <div class="card">
+        <img class="thumb" src="img/wingate-cover.jpg" alt="Wingate Massage site (placeholder)">
+        <h2>Wingate Massage — IT Lead</h2>
+        <div class="meta">Jan 2025–Present • Square, DNS/SSL, M365/Entra ID (MFA, RBAC)</div>
+        <p>Built and secured the small-business website and IT stack: Square site, DNS & SSL, Microsoft 365 with MFA/RBAC, backups, and basic SEO/accessibility.</p>
+        <ul>
+          <li>Security: enforced MFA, least privilege, backup/restore tests</li>
+          <li>Impact: add 2–3 metrics (e.g., uptime, page speed)</li>
+        </ul>
+        <div class="btnrow">
+          <a href="https://github.com/searnest94/Patrick_Earnest_Resume/tree/main/projects/wingate-massage-website" target="_blank">Repo folder</a>
+          <!-- Replace # with your public site if you want -->
+          <a href="#" target="_blank">Live site (optional)</a>
+        </div>
+      </div>
+
+      <!-- Packet Tracer -->
+      <div class="card">
+        <img class="thumb" src="img/pt-cover.jpg" alt="Packet Tracer lab (placeholder)">
+        <h2>Inter-Subnet Routing with RIP + DHCP/DNS (CYB-210)</h2>
+        <div class="meta">Cisco Packet Tracer • Routing, DHCP, DNS</div>
+        <p>Routed multi-subnet lab with centralized DHCP/DNS; validated with <code>show ip route</code>, traceroute, and nslookup.</p>
+        <ul>
+          <li>Results: all subnets reachable; RIP learned N routes; X clients leased</li>
+        </ul>
+        <div class="btnrow">
+          <a href="https://github.com/searnest94/Patrick_Earnest_Resume/tree/main/projects/cyb210-packettracer-rip-dhcp-dns" target="_blank">Repo folder</a>
+        </div>
+      </div>
+
+      <!-- AD Hardening -->
+      <div class="card">
+        <img class="thumb" src="img/ad-cover.jpg" alt="AD hardening (placeholder)">
+        <h2>Active Directory Hardening Lab</h2>
+        <div class="meta">GPOs, auditing, least privilege, MFA</div>
+        <p>Hardened an AD lab with secure policies and auditing; documented evidence and improvements.</p>
+        <div class="btnrow">
+          <a href="https://github.com/searnest94/Patrick_Earnest_Resume/tree/main/projects/ad-hardening-lab" target="_blank">Repo folder</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
